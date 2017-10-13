@@ -18,19 +18,19 @@ export class CrudService {
     // api/AddLoc ---> Adds a new Location and posts details back. //
 
     getAll() {
-        return this.http.get('http://localhost:56134/api/Crud',this.jwt()).map((response: Response) => response.json());
+        return this.http.get('http://localhost:56523/api/Students/',this.jwt()).map((response: Response) => response.json());
     }
     create(model:any) {
-            return this.http.post('http://localhost:56134/api/Crud',model,this.jwt()).map((response: Response) => response.json());
+            return this.http.post('http://localhost:56523/api/Students/',model,this.jwt()).map((response: Response) => response.json());
         }
     // // api/EditLoc ---> Update the existing Location details. //
 
     update(model:any) {
-        return this.http.put('http://localhost:56134/api/Crud', model, this.jwt()).map((response: Response) => response.json());
+        return this.http.put('http://localhost:56523/api/Students/', model, this.jwt()).map((response: Response) => response.json());
     }
 
     delete(id:any) {
-        return this.http.delete('http://localhost:56134/api/Crud/'+id, this.jwt()).map((response: Response) => response.json());
+        return this.http.delete('http://localhost:56523/api/Students/'+id, this.jwt()).map((response: Response) => response.json());
     }
 
 

@@ -1,7 +1,7 @@
-       <button type="button" class="btn btn-info" (click)="openModal(template)">Add Person</button>
+       <button type="button" class="btn btn-primary" (click)="openModal(template)">Add Student</button>
         <template #template>
                 <div class="modal-header">
-                    <h4 class="modal-title pull-left">Add Person</h4>
+                    <h4 class="modal-title pull-left">Add Student</h4>
                     <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
                            <span aria-hidden="true">&times;</span>
                     </button>
@@ -15,13 +15,13 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
-                    <input class="form-control" type="text" placeholder=" Name" [formControl]="complexForm.controls['Name']">
+                    <input class="form-control" type="text" placeholder="FirstName" [formControl]="complexForm.controls['FirstName']">
                 </div>
             </div>
 
             <div class="col-md-6">
                 <div class="form-group">
-                    <input   class="form-control" type="text" placeholder="Phone" [formControl]="complexForm.controls['Phone']">
+                    <input   class="form-control" type="text" placeholder="LastName" [formControl]="complexForm.controls['LastName']">
                 </div>
             </div>
         </div>
@@ -35,25 +35,6 @@
                 </div>
             </div>
 
-            <div class="col-md-6">
-                <div class="form-group">
-                    <input   class="form-control" type="text" placeholder="Address" [formControl]="complexForm.controls['Address']">
-                </div>
-            </div>
-        </div>
-
-         <div class="row">
-            <div class="col-md-6">
-                <div class="form-group">
-                    <input    class="form-control" type="text" placeholder="State" [formControl]="complexForm.controls['State']">
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="form-group">
-                    <input  class="form-control" type="email" placeholder="City" [formControl]="complexForm.controls['City']">
-                </div>
-            </div>
         </div>
     </div>
     </div>

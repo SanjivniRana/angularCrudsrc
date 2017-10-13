@@ -5,7 +5,7 @@
 
 
 .modal-header{
-    background-color: #66ffff;
+    background-color: #FFFFFF;
      
 }
 input[type="text"].ng-valid, input[type="email"].ng-valid, input[type="password"].ng-valid, input[type="date"].ng-valid, input[type="number"].ng-valid, input[type="file"].ng-valid, textarea.ng-valid, select.ng-valid {
